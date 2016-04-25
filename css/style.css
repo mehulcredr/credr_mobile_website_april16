@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,700);
+
 /*! 
  *   Credr Mobile Website
  *   Author: Incredible Technologies
@@ -12,16 +14,13 @@ html, body
     -webkit-font-smoothing: antialiased;
     min-height: 100%;
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.4;
     color: #555;
-    letter-spacing: 1px;    
-    background: #000;
+    background: #de3137;
 	width: 100%;
     height: 100%;
+    font-family: Montserrat;
 }
-
-
-
 a
 {
     color: #222;
@@ -29,26 +28,17 @@ a
 a:hover, a:active, a:focus
 {
     outline: none;
-    text-decoration: underline;
+    text-decoration: none;
     color: #3C3C3C;
 }
 /* Layouts */
-.wrapper
-{
-    
-}
-.wrapper:before, .wrapper:after
-{
-    display: table;
-    content: " ";
-    clear: both;
-}
+
 /* Utility */
 /* H1 - H6 font */
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6
 {
-    
+    font-family: Montserrat;
 }
 
 /* Page Header / Pagetitle */
@@ -116,24 +106,128 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     position: absolute;
     right: 0;
     font-size: 12px;
+    margin-top: 5px;
 }
+
+
+/**********************
+/**********************
+    Left Side Menu
+/**********************
+/**********************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* HEADER */
 .main-header{
 	color: #fff; 
 	margin-top: 15px;
+    
+}
+/* Header Top*/
+.main-header a{
+    color:#fff;
+    font-size: 1.3em;
 }
 .main-header .btn-login{
 	border: 1px solid #e35549;
     background: #e0423f;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
+/* Header logo*/
 
+.main-header .logo {
+    padding: 3rem 0 1rem;
+}
+
+/* Header Tagline*/
+
+.main-header .text {
+    width: 90%;
+    margin:1.5rem auto;
+}
+/* Search */
+.search .input-group{
+    background: #fff;
+    border-radius: 4px;
+}
+.search input {
+    font-size: 1.2em;
+    height: auto;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border: 0;
+    box-shadow: none;
+}
+.search .input-group-addon{
+    background: #FFF;
+    border: 0;
+    box-shadow: none;
+}
+.search .search-btn {
+    background: #e1e4e8;
+    color: #000;
+    font-size: 1.2em;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
 /**************** AUTHENTICATION *****************/
 
 .authentication{
-    font-size: 1.2em;
+    
     font-weight: 500;
 }
 .authentication header{
@@ -143,7 +237,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 /* Logo */
 .authentication header .logo{
 	display: table-cell;
-    height: 300px;
+    height: 15rem;
     vertical-align: middle;
     width: 100%;
     text-align: center;
@@ -155,7 +249,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 }
 /* Form */
 .authentication .form-group{
-	margin-bottom: 30px;
+	margin-bottom: 2.0rem;
 	position: relative;
 }
 .authentication .input-group-addon, 
@@ -167,10 +261,12 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
     height: auto;
     padding: 10px 12px;
 }
+@media (min-height: 500px ){
 .authentication footer{
-	    position: absolute;
+    position: absolute;
     bottom: 0;
     width: 100%;
+}
 }
 .authentication .btn-success{
 	background: #00b035;

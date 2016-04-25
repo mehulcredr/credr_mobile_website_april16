@@ -6,12 +6,12 @@
 }
 
 .menu-wrap a {
-	color: #b8b7ad;
+	color: #fff;
 }
 
 .menu-wrap a:hover,
 .menu-wrap a:focus {
-	color: #c94e50;
+	color: #fff;
 }
 
 .content-wrap {
@@ -24,9 +24,11 @@
 }
 
 .content::before {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
+	bottom:0;
+	right:0;
 	z-index: 10;
 	width: 100%;
 	height: 100%;
@@ -45,22 +47,25 @@
 .menu-button {
 	position: fixed;
 	padding: 0;
-	width: 2.5em;
-	height: 2.25em;
+	width: 1.5em;
+	height: 2.0em;
 	border: none;
 	text-indent: 2.5em;
 	font-size: 1.2em;
 	color: transparent;
 	background: transparent;
 }
+.menu-button:focus{
+	outline: none;
 
+}
 .menu-button::before {
 	position: absolute;
 	top: 0.5em;
-	right: 0.5em;
+	right: 0em;
 	bottom: 0.5em;
-	left: 0.5em;
-	background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+	left: 0em;
+	background: linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%);
 	content: '';
 }
 
@@ -77,7 +82,6 @@
 	top: 1em;
 	overflow: hidden;
 	text-indent: 1em;
-	font-size: 0.75em;
 	border: none;
 	background: transparent;
 	color: transparent;
@@ -91,7 +95,7 @@
 	height: 100%;
 	top: 0;
 	left: 50%;
-	background: #bdc3c7;
+	background: #fff;
 }
 
 .close-button::before {
@@ -110,8 +114,8 @@
 	z-index: 1001;
 	width: 300px;
 	height: 100%;
-	background: #373a47;
-	padding: 2.5em 1.5em 0;
+	background: #de3339;
+	padding:2.0em 0em 0;
 	font-size: 1.15em;
 	-webkit-transform: translate3d(-320px,0,0);
 	transform: translate3d(-320px,0,0);
@@ -125,13 +129,20 @@
 .icon-list {
 	height: 100%;
 }
-
+ul.icon-list  li{
+	border-bottom: 1px solid #c72c31;
+}
+.icon-list  .icon{
+	width: 30px;
+	display: inline-block;
+	text-align: center;
+}
 .icon-list {
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
 }
 
-.icon-list a {
+.icon-list li {
 	display: block;
 	padding: 0.8em;
 	-webkit-transform: translate3d(0,500px,0);
@@ -139,42 +150,39 @@
 }
 
 .icon-list,
-.icon-list a {
+.icon-list li {
 	-webkit-transition: -webkit-transform 0s 0.4s;
 	transition: transform 0s 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
-.icon-list a:nth-child(2) {
+.icon-list li:nth-child(2) {
 	-webkit-transform: translate3d(0,1000px,0);
 	transform: translate3d(0,1000px,0);
 }
 
-.icon-list a:nth-child(3) {
+.icon-list li:nth-child(3) {
 	-webkit-transform: translate3d(0,1500px,0);
 	transform: translate3d(0,1500px,0);
 }
 
-.icon-list a:nth-child(4) {
+.icon-list li:nth-child(4) {
 	-webkit-transform: translate3d(0,2000px,0);
 	transform: translate3d(0,2000px,0);
 }
 
-.icon-list a:nth-child(5) {
+.icon-list li:nth-child(5) {
 	-webkit-transform: translate3d(0,2500px,0);
 	transform: translate3d(0,2500px,0);
 }
 
-.icon-list a:nth-child(6) {
+.icon-list li:nth-child(6) {
 	-webkit-transform: translate3d(0,3000px,0);
 	transform: translate3d(0,3000px,0);
 }
 
-.icon-list a span {
-	margin-left: 10px;
-	font-weight: 700;
-}
+
 
 /* Shown menu */
 .show-menu .menu-wrap {
@@ -187,7 +195,7 @@
 }
 
 .show-menu .icon-list,
-.show-menu .icon-list a {
+.show-menu .icon-list li{
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	-webkit-transition: -webkit-transform 0.8s;
@@ -196,7 +204,7 @@
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
-.show-menu .icon-list a {
+.show-menu .icon-list li {
 	-webkit-transition-duration: 0.9s;
 	transition-duration: 0.9s;
 }

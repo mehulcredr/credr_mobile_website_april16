@@ -6,6 +6,7 @@
 	top: 0;
 	left: 0;
 	background: #FFF;
+	z-index: 3;
 }
 
 /* Overlay closing cross */
@@ -84,6 +85,7 @@
 /* Effects */
 .overlay-door {
 	visibility: hidden;
+	    overflow-y: scroll;
 	width: 0;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -128,4 +130,8 @@
 	.overlay ul li {
 		min-height: 34px;
 	}
+}
+
+#signupbox{
+	display: none;
 }
