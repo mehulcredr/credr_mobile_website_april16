@@ -4,13 +4,14 @@
  *
  *
  **/
-
+if ($('#open-button').length > 0) { 
+    
 
 (function() {
 
 	var bodyEl = document.body,
 		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
+		openbtn = document.getElementById( 'open-button'),
 		closebtn = document.getElementById( 'close-button' ),
 		isOpen = false;
 
@@ -47,13 +48,16 @@
 
 })();
 
+}
+
+
 /**
  *
  * Login Overlay
  *
  *
  **/
-
+if ($('#trigger-overlay').length > 0) { 
  (function() {
 	var triggerBttn = document.getElementById( 'trigger-overlay' ),
 		overlay = document.querySelector( 'div.overlay' ),
@@ -94,3 +98,4 @@
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
+}

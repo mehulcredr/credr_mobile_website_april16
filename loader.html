@@ -25,6 +25,9 @@
           <script src="js/modernizr.custom.js"></script>
         </head>
         <style>
+        body{
+          background: #000;
+        }
         /* Chrome, Safari, Opera */ 
         @-webkit-keyframes mymove {
           0%   {top: 0px;left:0}
@@ -55,6 +58,18 @@
         </style>
 
         <body>
+          <div class="top">
+                    <ul class="list-unstyled pull-left no-margin">
+                      <li><div class="btn btn-menu" id="open-button" type="button"><a><i class="fa fa-bars"></i></a></div></li>
+                    </ul>
+                    <ul class="list-unstyled pull-right no-margin">
+                      <li><div class="btn btn-shortlist"  type="button"><a href="tel:9819125557"><i class="fa fa-phone"></i></a></div></li>
+                      <li><div class="btn btn-shortlist"  type="button"><a><i class="fa fa-shopping-cart"></i></a></div></li>
+                      <li><div class="btn btn-shortlist"  type="button"><a><i class="fa fa-heart"></i></a></div></li>
+                      <li><div class="btn btn-login" id="trigger-overlay" type="button">login</div></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
           <div class="loader" style="position:relative;">
            <!--  <div class="a-dot">.</div> -->
            <svg height="400" width="400" style="border:1px solid #ccc; padding:50px" xmlns="http://www.w3.org/2000/svg"

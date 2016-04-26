@@ -30,6 +30,12 @@
           <script src="js/modernizr.custom.js"></script>
         </head>
 
+<style>
+  body{
+    background: #de3137;
+
+  }
+</style>
 
         <body>
           <aside class="menu-wrap">
@@ -60,10 +66,16 @@
               <header class="main-header">
                 <div class="container">
                   <div class="top">
-                    <button class="menu-button" id="open-button">Open Menu</button>
-                    <div class="btn btn-login pull-right" id="trigger-overlay" type="button">login</div>
-                    <div class="btn btn-shortlist pull-right"  type="button"><a><i class="fa fa-heart"></i></a></div>
-                    <div class="btn btn-shortlist pull-right"  type="button"><a href="tel:9819125557"><i class="fa fa-phone"></i></a></div>
+                     <ul class="list-unstyled pull-left no-margin">
+                      <li><div class="btn btn-menu" type="button"><a><i id="open-button" class="fa fa-bars"></i></a></div></li>
+                      <!-- <li><div id="open-button" type="button"><a><i class="fa fa-bars"></i></a></div></li> -->
+                    </ul>
+                    <ul class="list-unstyled pull-right no-margin">
+                      <li><div class="btn btn-call"  type="button"><a href="tel:9819125557"><i class="fa fa-phone"></i></a></div></li>
+                      <li><div class="btn btn-cart"  type="button"><a><i class="fa fa-shopping-cart"></i></a></div></li>
+                      <li><div class="btn btn-shortlist"  type="button"><a><i class="fa fa-heart"></i></a></div></li>
+                      <li><div class="btn btn-login" id="trigger-overlay" type="button">login</div></li>
+                    </ul>
                     <div class="clearfix"></div>
                   </div>
                   <div class="logo text-center">
