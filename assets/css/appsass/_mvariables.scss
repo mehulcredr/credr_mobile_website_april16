@@ -1,0 +1,45 @@
+
+//== Colors
+
+
+
+$brand-primary:     	#4b4779 !default;
+$brand-success:         #00b137 !default;
+$brand-info:            #4a90e2 !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #da2128 !default;
+$lighter-gray:			#999999 !default;
+$lightest-gray:			#cccccc !default;
+
+
+
+//== Fonts Weight
+
+
+$font-light: 			300;
+$font-normal: 			400;
+
+$font-semibold: 		500; 
+$font-bold:  			700;
+
+$headings-font-weight:    600 !default; 
+
+
+
+//== Error 
+
+$state-success-text:             $brand-success;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           $brand-success;
+
+$state-info-text:                $brand-info;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              $brand-info;
+
+$state-warning-text:             $brand-warning;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           $brand-warning;
+
+$state-danger-text:              $brand-danger;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            $brand-danger;

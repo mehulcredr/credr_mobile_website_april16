@@ -1,0 +1,17 @@
+
+//== Button Styles
+
+.btn{
+	font-weight: $font-semibold;
+	font-size:16px;
+}
+.btn-secondary{
+	background-color: $lightest-gray;
+}
+.btn{
+	&.disabled{
+	background-color: $gray-lighter;	
+	border-color: $gray-lighter;
+	color: #fff;
+}
+}

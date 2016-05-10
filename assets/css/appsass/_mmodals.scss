@@ -1,0 +1,24 @@
+
+//== Modals
+
+
+
+.modal-footer{
+	border:none;
+	border-bottom-left-radius: 5px;
+    overflow: hidden;
+    border-bottom-right-radius: 5px;
+    padding: 0;
+}
+.modal-header .close {
+    margin-top: -25px;
+    background: #fff;
+    font-size: 14px;
+    opacity: 1;
+    padding: 10px;
+    margin-right: -25px;
+    border-radius: 50%;
+}
+.modal-backdrop {
+    background: linear-gradient(to bottom, #495476, #000000);
+}

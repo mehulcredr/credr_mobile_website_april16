@@ -1,0 +1,29 @@
+
+/**************** AUTHENTICATION *****************/
+
+.authentication{
+    
+    font-weight: 500;
+}
+.authentication header{
+	display: table;
+    min-width: 100%;
+}
+/* Logo */
+.authentication header .logo{
+	display: table-cell;
+    height: 15rem;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.authentication header .logo img{
+	width:200px;
+}
+/* Form */
+.authentication .form-group{
+	margin-bottom: 2.0rem;
+	position: relative;
+}

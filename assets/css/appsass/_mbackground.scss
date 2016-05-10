@@ -1,0 +1,51 @@
+
+//== BACKGROUND
+
+
+// * For purple background use bg-primary * //
+
+.bg-green, .bg-success{
+	background-color: $brand-success!important; // #00b137
+}
+
+.bg-blue, .bg-info{
+	background-color: $brand-info!important; // #4a90e2
+}
+
+.bg-red, .bg-danger{
+	background-color: $brand-danger!important; // #da2128
+}
+
+.bg-yellow, .bg-warning{
+	background-color: $brand-warning!important; // #f0ad4e
+}
+
+.bg-black{
+	background-color: $gray-base!important; // #000
+}
+
+.bg-darker-grey{
+	background-color: $gray-darker!important; // #222
+}
+
+.bg-dark-grey{
+	background-color: $gray-dark!important; // #333
+}
+
+.bg-grey{
+	background-color: $gray!important; // #555
+}
+
+.bg-light-grey{
+	background-color: $gray-dark!important; // #777
+}
+
+.bg-lighter-grey{
+	background-color: #999999!important;
+}
+
+.bg-lightest-grey{
+	background-color: #ccc!important;
+}
+
+

@@ -1,0 +1,60 @@
+
+//== Text Color
+
+
+.text-green{
+	color: $brand-success!important;
+}
+
+.text-red{
+	color:  $brand-danger!important;
+}
+
+.text-yellow{
+	color:  $brand-warning!important;
+}
+
+.text-blue{
+	color:  $brand-info!important;
+}
+
+.text-black{
+	color: $gray-base!important; // #000
+}
+
+.text-darker-grey{
+	color: $gray-darker!important; // #222
+}
+
+.text-dark-grey{
+	color: $gray-dark!important; // #333
+}
+
+.text-grey{
+	color: $gray!important; // #555
+}
+
+.text-light-grey{
+	color: $gray-light!important; // #777
+}
+
+.text-lighter-grey{
+	color: $lighter-gray!important; //999
+}
+
+.text-lightest-grey{
+	color: $lightest-gray!important; //ccc
+}
+
+.text-white{
+	color: $body-bg!important;
+}
+
+.text-purple{
+	color: #321b50;
+}
+$brand-primary:     	#4b4779 !default;
+$brand-success:         #00b137 !default;
+$brand-info:            #4a90e2 !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #da2128 !default;

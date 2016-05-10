@@ -1,0 +1,22 @@
+
+//== Typography
+
+
+body {
+  font-family: 'Proxima-Nova';
+  color: $gray;
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: $font-semibold;
+  margin: 5px 0;
+}
+
+.wide-spacing{
+	letter-spacing: 2px
+}
+.semiwide-spacing{
+	letter-spacing: 1.2px;
+}
+
